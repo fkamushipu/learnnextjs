@@ -2,8 +2,11 @@ import { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Login from '../components/LoginCard';
+import Register from '../components/RegisterCard';
 import image1 from "../public/images/backgroundImage.jpg";
 import AnotherLogin from '../components/Anotherlogin';
+import Heading1 from "../components/Heading1"
+
 
 
 const Home = () => {
@@ -12,21 +15,37 @@ const Home = () => {
     description:"Please enter your login details below, if you have been registered!",
     footer: "I have agreed to the Terms and conditions"
   }
+  const RegisterData ={
+    title:"Register",
+    description:"Please enter your information in the form below below, to registered!",
+    footer: "I have agreed to the Terms and conditions"
+  }
   return (
-    <div className="">
+    <div className="p-4">
 
-    {/* Login Card Starts here */}
-      <div className='flex justify-center relative w-full no-repeat'>
+      {/* Login Card Starts here */}
+      <Heading1 heading1={"Login Sample1"}></Heading1>
+      <div className='flex justify-center relative w-full no-repeat p-8'>
         <div className="w-full z-0 ">
-                <Image src={image1} className="w-full"/>
+                <Image src={image1} className="w-full  shadow-xl rounded-xl"/>
         </div>
         <Login title= {loginData.title} description={loginData.description} terms={loginData.footer} />
       </div>
+
       <br></br>
+
       {/* Another Login card design */}
+      <Heading1 heading1={"Another Login"}></Heading1>
+
 
       <div className='m-6'>
         <AnotherLogin title= {loginData.title} description={loginData.description} terms={loginData.footer}></AnotherLogin>
+      </div>
+
+      {/* Register card design */}
+      <Heading1 heading1={"Register Card"}></Heading1>
+      <div className='m-6'>
+        <Register title= {RegisterData.title} description={RegisterData.description} terms={RegisterData.footer}></Register>
       </div>
     </div>
   )

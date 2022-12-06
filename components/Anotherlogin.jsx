@@ -7,7 +7,7 @@ import image1 from "../public/images/backgroundImage.jpg"
 
 
 const Card = (props) =>(
-    <div className=" w-full mt-6">
+    <div className=" w-full mt-6 shadow-xl opacity-90">
         <div className="flex flex-col md:flex-row rounded-lg bg-white shadow-lg">
             <Image src={image1} className="w-full h-96 md:h-auto object-cover md:max-w-xl rounded-t-lg md:rounded-none md:rounded-l-lg"/>
 
@@ -31,6 +31,7 @@ const Card = (props) =>(
                         </div>
                         <br></br>
                     </form>
+                    
 
                     <div className="grid grid-cols-2">
                         <Button button={"CANCEL"}></Button>
