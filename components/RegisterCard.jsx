@@ -6,6 +6,7 @@ import Image from "next/image";
 import image1 from "../public/images/backgroundImage.jpg"
 import Heading from "./Heading"
 import FormLabel from "./FormLabel";
+import FormFooter from "./FormFooter";
 
 
 const Card = (props) =>(
@@ -38,7 +39,7 @@ const Card = (props) =>(
                         <br></br>
                     </form>
 
-                    <div className="grid md:grid-cols-2 sm:flex-col">
+                    <div className="grid grid-cols-2 ">
                         <Button button={"CANCEL"}></Button>
                     
                         <Button button={"Register"} type="submit"></Button>
@@ -46,13 +47,7 @@ const Card = (props) =>(
                     </div>
 
                 </div>
-                <div className="w-full  bg-yellow-800  py-2.5"> 
-                    <div className="inline px-16 text-lg font-semibold font-serif tracking-wide ">
-                        <input class="mr-2 leading-tight" type="checkbox" />
-                        <span className=" text-center text-white"> {props.terms}</span> 
-                    </div>
-                    
-                </div>
+                <FormFooter terms={props.terms}></FormFooter>
             
             </div>
 
