@@ -7,9 +7,18 @@ const Layouts = ({children}) => {
     return(
         <div>
             <Head/>
-            <Navigation/>
-            {children}
+            <div className="grid grid-cols-12 bg-gray-100">
+                <div className="col-span-3"> 
+                    <Navigation/>
+                </div>
+                <div className="col-span-9">
+                    {children}
+                   
+                </div>
+            
+            </div>
             <Footer/>
+            
         </div>
     )
 }

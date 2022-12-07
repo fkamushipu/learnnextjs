@@ -9,7 +9,7 @@ import image1 from "../public/images/backgroundImage.jpg"
 const Card = (props) =>(
     <div className=" w-full mt-6 shadow-xl opacity-90">
         <div className="flex flex-col md:flex-row rounded-lg bg-white shadow-lg">
-            <Image src={image1} className="w-full h-96 md:h-auto object-cover md:max-w-xl rounded-t-lg md:rounded-none md:rounded-l-lg"/>
+            <Image src={image1} className="w-full h-96 md:h-auto object-cover md:max-w-lg rounded-t-lg md:rounded-none md:rounded-l-lg"/>
 
             <div className="bg-gray-200   flex flex-col justify-start w-full">
                 <div className="w-full  bg-yellow-800 "> 

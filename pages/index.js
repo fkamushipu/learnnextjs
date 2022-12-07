@@ -5,7 +5,7 @@ import Login from '../components/LoginCard';
 import Register from '../components/RegisterCard';
 import image1 from "../public/images/backgroundImage.jpg";
 import AnotherLogin from '../components/Anotherlogin';
-import Heading1 from "../components/Heading1"
+import Heading1 from "../components/Heading"
 
 
 
@@ -24,7 +24,10 @@ const Home = () => {
     <div className="p-4">
 
       {/* Login Card Starts here */}
-      <Heading1 heading1={"Login Sample1"}></Heading1>
+      <div className='w-full shadow-xl'>
+        <Heading1 heading1={"This is the first login sample"}></Heading1>
+      </div>
+      
       <div className='flex justify-center relative w-full no-repeat p-8'>
         <div className="w-full z-0 ">
                 <Image src={image1} className="w-full  shadow-xl rounded-xl"/>
@@ -35,15 +38,17 @@ const Home = () => {
       <br></br>
 
       {/* Another Login card design */}
-      <Heading1 heading1={"Another Login"}></Heading1>
-
-
+      <div className='w-full shadow-xl'>
+        <Heading1 heading1={"This is the second login sample"}></Heading1>
+      </div>
       <div className='m-6'>
         <AnotherLogin title= {loginData.title} description={loginData.description} terms={loginData.footer}></AnotherLogin>
       </div>
 
       {/* Register card design */}
-      <Heading1 heading1={"Register Card"}></Heading1>
+      <div className='w-full shadow-xl'>
+        <Heading1 heading1={"This is the registration card"}></Heading1>
+      </div>
       <div className='m-6'>
         <Register title= {RegisterData.title} description={RegisterData.description} terms={RegisterData.footer}></Register>
       </div>

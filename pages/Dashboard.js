@@ -1,12 +1,10 @@
 import React from "react";
 
 
-const Dashboard= () =>(
+const Dashboard= (props) =>(
     <div>
         <div>
-            {/* Navigatioon */}
-            <div></div>
-            {/* Content */}
+            <div className="w-full text-center py-2.5 text-2xl font-serif tracking-wide"><span className="animate-pulse ">Welcome {props.name} to our website !!!</span></div>
             <div></div>
         </div>
     </div>
