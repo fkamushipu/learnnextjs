@@ -1,14 +1,9 @@
-import { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import Image from 'next/image';
 import Login from '../components/LoginCard';
 import Register from '../components/RegisterCard';
 import image1 from "../public/images/backgroundImage.jpg";
 import AnotherLogin from '../components/Anotherlogin';
-import Heading1 from "../components/Heading"
-
-
-
+import Heading1 from "../components/Heading";
 const Home = () => {
   const loginData ={
     title:"Login",

@@ -1,13 +1,8 @@
 import React from "react";
-import Label from "./Label"
-import Button from "./Button"
-import Input from "./Input"
-import Image from "next/image";
+import Button from "./Button";
 import Heading from "./Heading";
 import FormLabel from "./FormLabel";
 import FormFooter from "./FormFooter";
-
-
 const Card = (props) =>(
     <div className=" z-10  top-10 opacity-80 min-w-xl">
         <div className="">
@@ -31,15 +26,10 @@ const Card = (props) =>(
                         <Button button={"CANCEL"}></Button>
                     
                         <Button button={"LOGIN"} type="submit"></Button>
-                        
                     </div>
-
                 </div>
-               
                 <FormFooter terms={props.terms}></FormFooter>
-            
             </div>
-
         </div>
     </div>
 )

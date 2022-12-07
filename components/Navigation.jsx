@@ -1,9 +1,5 @@
 import React from "react";
 import Links from "./Links";
-import Profilepic from "../public/images/profile.png";
-import Image from "next/image";
-import Heading1  from "./Heading"
-
 function Navigation (){
     return (
         <div className="md:fixed md:w-96 col-span-8 border h-full pr-8 bg-gray-200">

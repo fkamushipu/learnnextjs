@@ -1,5 +1,4 @@
 import React from "react";
-
 function Footer(){
     return(
         <div className="py-2.5 bg-yellow-800 text-white  shadow-lg fixed bottom-0 w-full opacity-90 ">
