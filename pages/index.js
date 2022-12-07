@@ -28,11 +28,13 @@ const Home = () => {
         <Heading1 heading1={"This is the first login sample"}></Heading1>
       </div>
       
-      <div className='flex justify-center relative w-full no-repeat p-8'>
+      <div className='flex justify-center  w-full no-repeat p-8 '>
         <div className="w-full z-0 ">
-                <Image src={image1} className="w-full  shadow-xl rounded-xl"/>
+          <Image src={image1} className="w-full shadow-xl rounded-xl"/>
         </div>
+        <div className='absolute'>
         <Login title= {loginData.title} description={loginData.description} terms={loginData.footer} />
+        </div>
       </div>
 
       <br></br>

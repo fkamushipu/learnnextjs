@@ -7,11 +7,11 @@ const Layouts = ({children}) => {
     return(
         <div>
             <Head/>
-            <div className="grid grid-cols-12 bg-gray-100">
-                <div className="col-span-3"> 
+            <div className="grid md:grid-cols-12 bg-gray-100">
+                <div className="md:col-span-3"> 
                     <Navigation/>
                 </div>
-                <div className="col-span-9">
+                <div className="md:col-span-9">
                     {children}
                    
                 </div>

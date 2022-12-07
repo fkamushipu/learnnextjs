@@ -3,14 +3,16 @@ import Label from "./Label"
 import Button from "./Button"
 import Input from "./Input"
 import Image from "next/image";
+import Heading from "./Heading";
+import FormLabel from "./FormLabel";
 
 
 const Card = (props) =>(
-    <div className=" z-10 absolute top-10 opacity-80 max-w-xl">
+    <div className=" z-10 absolute top-10 opacity-80 sm:max-w-sm md:max-w-xl">
         <div className="">
             <div className="bg-gray-200 rounded-3xl  ">
                 <div className="w-full  bg-yellow-800 rounded-t-3xl"> 
-                    <h3 className=" text-center py-3.5 tracking-normal text-5xl font-bold text-white"> {props.title}</h3> 
+                    <Heading heading4={props.title}></Heading> 
                 </div>
                 <div className="p-6">
                     <p className="text-center tracking-loose text-lg">{props.description}</p>
@@ -18,18 +20,14 @@ const Card = (props) =>(
 
                     {/* Login Register Form */}
                     <form  className="">
-                        <div className="grid grid-cols-10  w-full gap-6 py-4 text-xl">
-                            <Label label={"Username : "}></Label>
-                            <Input type="text" name="name" placeholder={"Enter your username!"} />
-                        </div>
-                        <div className="grid grid-cols-10  w-full gap-6 py-4 text-xl">
-                            <Label label={"Email : "}></Label>
-                            <Input type="email" name="name" placeholder={"Enter your email!"} />
-                        </div>
+                        <FormLabel  username={"Username : "} type={"text"} placeholder={"Enter your username!"}>
+                        </FormLabel>
+                        <FormLabel  username={"Password : "} type={"text"} placeholder={"Enter your password!"}>
+                        </FormLabel>
                         <br></br>
                     </form>
 
-                    <div className="grid grid-cols-2">
+                    <div className="grid md:grid-cols-2 sm:flex-col">
                         <Button button={"CANCEL"}></Button>
                     
                         <Button button={"LOGIN"} type="submit"></Button>

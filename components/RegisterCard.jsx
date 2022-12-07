@@ -4,6 +4,8 @@ import Button from "./Button"
 import Input from "./Input"
 import Image from "next/image";
 import image1 from "../public/images/backgroundImage.jpg"
+import Heading from "./Heading"
+import FormLabel from "./FormLabel";
 
 
 const Card = (props) =>(
@@ -13,7 +15,7 @@ const Card = (props) =>(
 
             <div className="bg-gray-200   flex flex-col justify-start w-full">
                 <div className="w-full  bg-yellow-800 "> 
-                    <h3 className=" text-center py-3.5 tracking-normal text-5xl font-bold text-white"> {props.title}</h3> 
+                    <Heading heading4={props.title}></Heading> 
                 </div>
                 <div className="p-6">
                     <p className="text-center tracking-loose text-lg">{props.description}</p>
@@ -21,34 +23,22 @@ const Card = (props) =>(
 
                     {/* Login Register Form */}
                     <form  className="">
-                        <div className="grid grid-cols-10  w-full gap-6 py-4 text-xl">
-                            <Label label={"First Name : "}></Label>
-                            <Input type={"text"} name="name" placeholder={"Enter your first name!"} />
-                        </div>
-                        <div className="grid grid-cols-10  w-full gap-6 py-4 text-xl">
-                            <Label label={"Second Name : "}></Label>
-                            <Input type={"text"} name="name" placeholder={"Enter your last name!"} />
-                        </div>
-                        <div className="grid grid-cols-10  w-full gap-6 py-4 text-xl">
-                            <Label label={"ID Number : "}></Label>
-                            <Input type={"number"} placeholder={"Enter your Id number!"} />
-                        </div>
-                        <div className="grid grid-cols-10  w-full gap-6 py-4 text-xl">
-                            <Label label={"Email : "}></Label>
-                            <Input type={"email"} name="name" placeholder={"Enter your email!"} />
-                        </div>
-                        <div className="grid grid-cols-10  w-full gap-6 py-4 text-xl">
-                            <Label label={"Postal address : "}></Label>
-                            <Input type={"number"} placeholder={"Enter your postal address!"} />
-                        </div>
-                        <div className="grid grid-cols-10  w-full gap-6 py-4 text-xl">
-                            <Label label={"Mobile Number : "}></Label>
-                            <Input type={"number"} placeholder={"Enter your mobile number!"} />
-                        </div>
+                        <FormLabel  username={"First Name : "} type={"text"} placeholder={"Enter your first name!"}>
+                        </FormLabel>
+                        <FormLabel  username={"Second Name : "} type={"text"} placeholder={"Enter your last name!"}>
+                        </FormLabel>
+                        <FormLabel  username={"ID Number : "} type={"number"} placeholder={"Enter your Id number!"}>
+                        </FormLabel>
+                        <FormLabel  username={"Email : "} type={"email"} placeholder={"Enter your email!"}>
+                        </FormLabel>
+                        <FormLabel  username={"Mobile Number : "} type={"number"} placeholder={"Enter your mobile number!"}>
+                        </FormLabel>
+                        <FormLabel  username={"Postal address : "} type={"number"} placeholder={"Enter your postal address!"}>
+                        </FormLabel>
                         <br></br>
                     </form>
 
-                    <div className="grid grid-cols-2">
+                    <div className="grid md:grid-cols-2 sm:flex-col">
                         <Button button={"CANCEL"}></Button>
                     
                         <Button button={"Register"} type="submit"></Button>

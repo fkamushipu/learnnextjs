@@ -4,6 +4,8 @@ import Button from "./Button"
 import Input from "./Input"
 import Image from "next/image";
 import image1 from "../public/images/backgroundImage.jpg"
+import Heading from "./Heading"
+import Formlabel from "./FormLabel"
 
 
 const Card = (props) =>(
@@ -13,7 +15,7 @@ const Card = (props) =>(
 
             <div className="bg-gray-200   flex flex-col justify-start w-full">
                 <div className="w-full  bg-yellow-800 "> 
-                    <h3 className=" text-center py-3.5 tracking-normal text-5xl font-bold text-white"> {props.title}</h3> 
+                    <Heading heading4={props.title}></Heading>  
                 </div>
                 <div className="p-6">
                     <p className="text-center tracking-loose text-lg">{props.description}</p>
@@ -21,19 +23,16 @@ const Card = (props) =>(
 
                     {/* Login Register Form */}
                     <form  className="">
-                        <div className="grid grid-cols-10  w-full gap-6 py-4 text-xl">
-                            <Label label={"Username : "}></Label>
-                            <Input type="text" name="name" placeholder={"Enter your username!"} />
-                        </div>
-                        <div className="grid grid-cols-10  w-full gap-6 py-4 text-xl">
-                            <Label label={"Email : "}></Label>
-                            <Input type="email" name="name" placeholder={"Enter your email!"} />
-                        </div>
+
+                    <Formlabel  username={"Username : "} type={"text"} placeholder={"Enter your username!"}>
+                    </Formlabel>
+                    <Formlabel  username={"Password : "} type={"text"} placeholder={"Enter your password!"}>
+                    </Formlabel>
                         <br></br>
                     </form>
                     
 
-                    <div className="grid grid-cols-2">
+                    <div className="grid md:grid-cols-2 sm:flex-col">
                         <Button button={"CANCEL"}></Button>
                     
                         <Button button={"LOGIN"} type="submit"></Button>
