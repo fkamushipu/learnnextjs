@@ -10,7 +10,8 @@ function Navigation (){
                 {/* Navigation */}
                 <div className="p-6 col-span-10">
                     <nav className="">
-                        <Links href={"/"}>Home</Links>
+                        <Links href={"/"} link={"Home"}></Links>
+                        <Links href={"/Dashboard"} link={"Dashboard"}></Links>
                     </nav>
                 </div>
                 <Image src={Profilepic} className="w-32 h-32 rounded-full col-span-2"/>
