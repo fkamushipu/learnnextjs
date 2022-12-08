@@ -1,14 +1,14 @@
 import React from "react";
-import Button from "./Button";
-import Heading from "./Heading";
+import Button from "../Form/Button";
+import Heading2 from "../Heading/Heading2";
 import FormLabel from "./FormLabel";
-import FormFooter from "./FormFooter";
+import FormFooter from "../Form/FormFooter";
 const Card = (props) =>(
     <div className=" z-10  top-10 opacity-80 min-w-xl">
         <div className="">
             <div className="bg-gray-200 rounded-3xl  ">
                 <div className="w-full  bg-yellow-800 rounded-t-3xl"> 
-                    <Heading heading4={props.title}></Heading> 
+                    <Heading2 heading2={props.title}></Heading2> 
                 </div>
                 <div className="p-6">
                     <p className="text-center tracking-loose text-lg">{props.description}</p>

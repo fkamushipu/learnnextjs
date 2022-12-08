@@ -1,10 +1,10 @@
 import React from "react";
-import Button from "./Button";
+import Button from "../Form/Button";
 import Image from "next/image";
 import image1 from "../public/images/backgroundImage.jpg";
-import Heading from "./Heading";
+import Heading2 from "../Heading/Heading2";
 import FormLabel from "./FormLabel";
-import FormFooter from "./FormFooter";
+import FormFooter from "../Form/FormFooter";
 const Card = (props) =>(
     <div className=" w-full mt-6 shadow-xl opacity-90">
         <div className="flex flex-col md:flex-row rounded-lg bg-white shadow-lg">
@@ -12,7 +12,7 @@ const Card = (props) =>(
 
             <div className="bg-gray-200   flex flex-col justify-start w-full">
                 <div className="w-full  bg-yellow-800 "> 
-                    <Heading heading4={props.title}></Heading> 
+                    <Heading2 heading2={props.title}></Heading2> 
                 </div>
                 <div className="p-6">
                     <p className="text-center tracking-loose text-lg">{props.description}</p>

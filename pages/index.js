@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import Login from '../components/LoginCard';
-import Register from '../components/RegisterCard';
+import Login from '../components/Cards/LoginCard';
+import Register from '../components/Cards/RegisterCard';
 import image1 from "../public/images/backgroundImage.jpg";
 import AnotherLogin from '../components/Anotherlogin';
-import Heading1 from "../components/Heading";
+import Heading1 from "../components/Heading/Heading1";
 const Home = () => {
   const loginData ={
     title:"Login",

@@ -2,7 +2,7 @@ import Head from "next/head";
 import React from "react";
 import Profilepic from "../public/images/profile.png";
 import Image from "next/image";
-import Heading1  from "./Heading";
+import Heading2  from "./Heading/Heading4";
 function head(){
     return(
         <div>
@@ -14,7 +14,7 @@ function head(){
                 {/* Navigation */}
                 <div className=" col-span-11 flex-row">
                     <div className="text-white">
-                        <Heading1 heading2={"The Systems Name"}></Heading1>
+                        <Heading2 heading2={"The Systems Name"}></Heading2>
                     </div>
                     <div>
                         <svg
