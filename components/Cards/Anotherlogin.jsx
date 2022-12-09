@@ -1,10 +1,10 @@
 import React from "react";
-import Button from "./Form/Button";
+import Button from "../Form/Button";
 import Image from "next/image";
-import image1 from "../public/images/backgroundImage.jpg";
-import Heading2 from "./Heading/Heading2";
-import FormLabel from "./FormLabel";
-import FormFooter from "./Form/FormFooter";
+import image1 from "../../public/images/backgroundImage.jpg";
+import Heading2 from "../Heading/Heading2";
+import FormLabel from "../Form/FormLabel";
+import FormFooter from "../Form/FormFooter";
 const Card = (props) =>(
     <div className=" w-full mt-6 shadow-xl opacity-90">
         <div className="flex flex-col md:flex-row rounded-lg bg-white shadow-lg">

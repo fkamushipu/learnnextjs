@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../Form/Button";
 import Heading2 from "../Heading/Heading2";
-import FormLabel from "./FormLabel";
+import FormLabel from "../Form/FormLabel";
 import FormFooter from "../Form/FormFooter";
 const Card = (props) =>(
     <div className=" z-10  top-10 opacity-80 min-w-xl">
